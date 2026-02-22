@@ -1,0 +1,16 @@
+## Day 10 of My 120-Day Data Analytics Challenge
+
+Today I worked on arrays inside formulas, along with the `UNIQUE`, `SORT`, lookup, and date/time functions.
+
+Arrays confused me at first. The idea that a formula can handle a whole range at once — instead of one cell at a time — took a minute to settle in my head. But once I saw how `UNIQUE` and `SORT` can spill results automatically, it started to feel less mechanical and more logical.
+
+Lookup functions were a different kind of challenge. I understand what they’re supposed to do, but I still move slowly when writing them. One small mistake in the reference, and everything breaks. I guess that’s part of building precision.
+
+Date and time functions also made me realize how much detail lives inside something that looks simple. A date isn’t just a date — it’s a number underneath.
+
+Still very much a beginner, but I can feel small pieces connecting.
+
+**At what point did formulas start feeling intuitive to you?**
+
+#DataAnalyticsLockedIn
+
