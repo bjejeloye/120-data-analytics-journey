@@ -1,0 +1,14 @@
+
+## Day 11 of My 120-Day Data Analytics Challenge
+
+Today I worked on charts — line, bar, and pie charts first, then more advanced ones like map charts, statistical charts, and sparklines.
+
+At a basic level, charts seem simple: select data, insert chart, done. But I started noticing how easy it is to misrepresent something just by choosing the wrong type. A pie chart can hide small differences. A line chart can suggest a trend that isn’t really strong. Even colors change how something feels.
+
+Map charts were interesting because they add context instantly, but they also depend heavily on clean, consistent data. Sparklines felt subtle — small, almost quiet visuals — but surprisingly useful for spotting patterns quickly.
+
+I’m still very much a beginner, but I’m starting to see that visualization isn’t just decoration. It’s interpretation.
+
+At what point did you start feeling confident choosing the “right” chart instead of just picking one?
+
+#DataAnalyticsLockedIn
