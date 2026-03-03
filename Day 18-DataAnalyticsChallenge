@@ -1,0 +1,11 @@
+## Day 18 / 120  
+
+Today I learned the basics of **Power Query** — Power Query Editor, some advanced transformations, Append vs Merge, and got my first look at M Language.
+
+Append vs Merge confused me at first. I had to really think about how the tables relate before choosing one.
+
+M still looks a bit intimidating, but I’m starting to see how powerful this tool is.
+
+Slowly connecting the dots.
+
+#DataAnalyticsLockedIn
