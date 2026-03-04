@@ -1,0 +1,15 @@
+## Day 19 of 120 
+
+Today I focused on **Power Query** — specifically Advanced Transformations, the difference between **Append vs Merge**, and an introduction to **M Language**.
+
+Append vs Merge finally made sense:
+- **Append** = stacking tables on top of each other  
+- **Merge** = combining tables based on a key  
+
+Simple in theory, but I had to slow down and think through it properly.
+
+Seeing the **M code** behind each step was slightly intimidating at first. But it helped me understand that every click in Power Query generates logic in the background.
+
+Still very much a beginner. Just trying to connect the dots consistently.
+
+#DataAnalyticsLockedIn
