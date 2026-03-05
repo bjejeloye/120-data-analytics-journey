@@ -1,5 +1,4 @@
-## Day [X] of 120 – Data Analytics Challenge
-
+## Day 23 of 120
 Today I started learning **DAX**.
 
 At first, the syntax looked a bit intimidating compared to the Excel formulas I’m used to. But after spending some time with it, I began to see how DAX creates calculations across the data model, not just within a single table.
