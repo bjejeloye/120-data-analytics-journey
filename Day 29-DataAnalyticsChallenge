@@ -1,0 +1,182 @@
+# 📊 MSC-CGI vs BSC-CGI Alignment Analysis (Power Query)
+
+## 🧩 Overview
+
+This project focuses on validating and comparing **MSC-CGI** and **BSC-CGI** datasets to ensure consistency and alignment across telecom network nodes.
+
+Using Power Query within Microsoft Excel / Power BI, the pipeline ingests raw 3G network data, transforms it into standardized formats, and produces a consolidated comparison output to identify mismatches, gaps, or inconsistencies between MSC and BSC configurations.
+
+---
+
+## 🔗 Project Link
+
+👉 **Download / Access Project Files:**  
+(https://funmatt-my.sharepoint.com/:x:/g/personal/admin_funmatt_onmicrosoft_com/IQBwF-hju7rgSokrV6zk8AiZAdkXchKvm2RyAcOYFb5SJGI?e=jOnj7a)
+
+## 🎯 Objective
+
+The primary goal of this project is to:
+
+- Ensure **CGI (Cell Global Identity)** values match between **MSC (Mobile Switching Center)** and **BSC (Base Station Controller)**
+- Detect:
+  - Missing CGIs  
+  - Mismatched records  
+  - Data inconsistencies across nodes  
+- Provide a reliable dataset for network auditing and optimization  
+
+---
+  
+
+## 🏗️ Architecture
+
+The project follows a layered ETL (Extract, Transform, Load) design:
+
+```
+
+Raw Data (Folders)
+↓
+Staging Queries (Transformations)
+↓
+Final Comparison Output
+
+```id="j6r9qk"
+
+---
+
+## 🔹 Data Sources
+
+- Local folders containing raw 3G datasets  
+  - Example:
+    - `D:\2024\dataset\3g\...`
+    - `D:\2024\dataset\3g\utrancell\...`
+
+These datasets represent network configurations extracted from:
+- MSC nodes  
+- BSC nodes  
+
+---
+
+## 🔹 Staging Layer (Not Loaded)
+
+Intermediate queries are used to clean and standardize data from different network elements:
+
+- MSC-CGI  
+- APMBC1  
+- ASMC4  
+- ASMC8  
+- LGMC3  
+- LGMC4  
+- OJMBC1  
+
+### ✔ Key Transformations
+
+- Column normalization (consistent naming across datasets)  
+- Data type enforcement  
+- Filtering invalid or null CGI records  
+- Removing duplicates  
+- Preparing keys for comparison  
+
+These queries are **not loaded**, serving only as transformation layers.
+
+---
+
+## 🔹 Final Output
+
+### ✅ MSC-CGI vs BSC-CGI Comparison
+
+This is the core output of the project:
+
+- Merges all cleaned datasets  
+- Compares CGI values between MSC and BSC nodes  
+- Highlights:
+  - Matching CGIs ✅  
+  - Missing CGIs ❌  
+  - Mismatched configurations ⚠️  
+
+The result is loaded into a worksheet/model for analysis and reporting.
+
+---
+
+## 🔄 Data Flow
+
+1. Raw data is ingested from source folders  
+2. Each node dataset is cleaned in staging queries  
+3. Standardized datasets are merged  
+4. CGI values are compared across MSC and BSC  
+5. Final results are generated for validation and reporting  
+
+---
+
+## 📊 Key Features
+
+- **Cross-Node Validation**  
+  Ensures consistency between MSC and BSC configurations  
+
+- **Automated Comparison Logic**  
+  Quickly identifies mismatches and missing records  
+
+- **Modular Query Design**  
+  Each dataset is processed independently before aggregation  
+
+- **Efficient Processing**  
+  Only final outputs are loaded, improving performance  
+
+- **Scalable Framework**  
+  Easily extendable to additional nodes or technologies  
+
+---
+
+## 📁 Project Structure (Conceptual)
+
+```
+
+/sources
+3g_main_folder
+3g_utrancell_folder
+
+/staging
+msc_cgi
+apmbc1
+asmc4
+asmc8
+lgmc3
+lgmc4
+ojmbc1
+
+/output
+msc_bsc_cgi_comparison
+
+
+---
+
+## 🚀 Use Case
+
+This project is useful for:
+
+- Telecom network audits  
+- Data consistency validation between network nodes  
+- Pre-optimization checks  
+- Troubleshooting configuration issues  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Power Query – Data extraction and transformation  
+- Microsoft Excel – Data output and inspection   
+
+---
+
+## 📈 Future Improvements
+
+- Add automated mismatch classification (e.g., missing in MSC vs BSC)  
+- Introduce dashboard visualization in Power BI  
+- Parameterize file paths for reusability  
+- Integrate additional network layers (e.g., 4G/5G nodes)  
+
+---
+
+## 📌 Summary
+
+This project provides a structured and scalable approach to validating **CGI alignment between MSC and BSC nodes**, helping ensure data integrity, improve network reliability, and support telecom optimization workflows.
+```
