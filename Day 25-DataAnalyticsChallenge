@@ -1,0 +1,14 @@
+
+## Day 25/120
+
+Today I started a small audit project to compare MSC-CGI and BSC-CGI data and check if the values align.
+
+Before touching the data, I tried to think through what the final output should look like and what data I actually need. That part was harder than I expected — figuring out the structure before doing the work.
+
+It made me realize that a lot of the work happens before any analysis even starts.
+
+Still early, but I’m starting to think more about the process, not just the tool.
+
+How do you usually approach a new dataset without getting lost?
+
+#DataAnalyticsLockedIn
